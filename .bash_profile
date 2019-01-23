@@ -1,11 +1,11 @@
-# ls auto colorfull
+# ls auto colorfull                                                                                
 #export CLICOLOR=1
 #export LSCOLORS=GxfxhxhxcxDxDxababbHbH
 alias ls='ls -G'
 alias ll='ls -al'
 alias grep='grep --color'
 # add env 
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 # git prompt and completion
 source ~/.git-completion.bash
 # 显示分支官方实现
@@ -17,4 +17,5 @@ if [ -f ~/.git-completion.bash ]; then
   #PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 fi
 # load bash completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
