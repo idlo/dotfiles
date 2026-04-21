@@ -27,7 +27,9 @@ set ideajoin
 set ideastatusicon=gray
 set showmode
 set idearefactormode=keep
-set trackactionids
+set cb=unnamed
+" set trackactionids
+set keep-english-in-normal-and-restore-in-insert
 
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
@@ -38,9 +40,15 @@ map <leader>b <Action>(ToggleLineBreakpoint)
 
 map <leader>r <Action>(RenameElement)
 map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+
+" map gd <Action>(GotoDeclaration)
+
+" map gq <Action>(ReformatCode)
 
 " map gi <Action>(GotoImplementation)
 map gb <Action>(Back)
+" map p <Action>(EditorPasteSimple)
 
 
 "" Use ctrl-c as an ide shortcut in normal and visual modes
